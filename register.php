@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <title>Iniciar sesión - Sistema de Asesorías Innova</title>
+    <title>Registrarse - Sistema de Asesorías Innova</title>
 </head>
 
 <body class="login-page">
@@ -24,31 +24,33 @@
             <a href=""><img src="img/logo.png"></a>
         </div> -->
         <div class="login-box-body">
-            <p class="login-box-msg">Iniciar sesión</p>
+            <p class="login-box-msg">Regístrate</p>
             <form action="action/login.php" method="POST">
                 <div class="form-group has-feedback">
-                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-                    <input type="text" name="email" class="form-control" placeholder="Correo electrónico" required>
-                    <small id="emailHelp" class="form-text tex-muted">No compartiremos tu email con nadie.</small>
+                    <input type="text" name="nombres" class="form-control" placeholder="Nombres" required>
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    <input type="text" name="apellidos" class="form-control" placeholder="Apellidos" required>
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="text" name="email" class="form-control" placeholder="Correo electrónico" required>
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
                     <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
                 <div class="row">
                     <div class="col-xs-8">
-                        <div class="checkbox icheck">
-                            <label>
-                                <input type="checkbox">Recordar contraseña</input>
-                            </label>
-                        </div>
                         <div class="col-xs-4">
-                            <button type="submit" name="login" value="login" class="btn btn-primary btn-flat">Iniciar Sesion</button>
+                            <button type="submit" name="register" value="login" class="btn btn-primary btn-flat">Crear cuenta</button>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <p>¿No tienes cuenta? <a href="register.php">Regístrate</a></p>
+                    <p>¿Ya tienes cuenta? <a href="index.php">Inicia sesión</a></p>
                 </div>
             </form>
         </div>
