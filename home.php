@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Bienvenido</h1>
+    <?php
+        include 'include/navbar.php'
+    ?>
 </body>
 </html>
